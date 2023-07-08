@@ -39,6 +39,7 @@ class CryptoCompareApi {
     const coinId: string = data[symbol].Id;
 
     const socialStats = await this._filledStatList(coinId);
+    this.statList = [];
     return socialStats;
   }
 
