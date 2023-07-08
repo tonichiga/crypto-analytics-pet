@@ -1,5 +1,4 @@
 "use client";
-import { CryptoCompareSocialStats } from "@/models/cryptocompare";
 import ChartArea from "../charts/linear-chart";
 import { useState } from "react";
 import cryptoCompateApi from "@/api/cryptocompare";
@@ -39,7 +38,7 @@ const ChartPageProvider = () => {
         y: {
           formatter: undefined,
           title: {
-            formatter: (seriesName) => seriesName,
+            formatter: (seriesName: string) => seriesName,
           },
         },
         z: {
