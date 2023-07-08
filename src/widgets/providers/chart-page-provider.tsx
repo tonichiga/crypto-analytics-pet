@@ -92,6 +92,7 @@ const ChartPageProvider = () => {
       series: [
         {
           data: seriesList,
+          name: "Twitter posts",
         },
       ],
     };
